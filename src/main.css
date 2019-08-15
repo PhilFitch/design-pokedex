@@ -1,0 +1,60 @@
+body {
+    background-color: #e67b94;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+#logo {
+    max-width: 90%;
+}
+
+#chars {
+    display: none;
+}
+
+.options {
+    display: flex;
+    margin: 10px 10px;
+    padding: 5px;
+    background-color: steelblue;
+    justify-content: space-around;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: #F8D030;
+    
+}
+
+.poke-image {
+    align-items: center;
+    height: 65%;
+}
+
+.poke-image img {
+    height: 100%;
+}
+
+.poke-info {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .8em;
+    margin: 10px 0px;
+}
