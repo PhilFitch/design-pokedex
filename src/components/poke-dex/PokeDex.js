@@ -4,7 +4,7 @@ import PokeCard from './PokeCard.js';
 class PokeDex extends Component {
 
     onRender(dom) {
-        const cards = this.props.cards;
+        const cards = this.props.pokemon;
 
         cards.forEach(pokemon => {
             const props = { pokemon: pokemon };
@@ -16,7 +16,7 @@ class PokeDex extends Component {
 
     renderHTML() {
         return /*html*/`
-            <ul class="pokedex"></ul>
+            <ul></ul>
         `;
     }
 }

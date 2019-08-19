@@ -15,7 +15,6 @@ class Component {
         if(typeof(html) !== 'string') {
             throw new Error(`Component "${this.constructor.name}" needs to return an html string from renderHTML`);
         }
-
         const dom = htmlToDOM(html);
 
         // remember the root Element for later for replacing or removing

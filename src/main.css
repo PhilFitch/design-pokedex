@@ -3,12 +3,3 @@ body {
     background-color: #e67b94;
 }
 
-
-
-@media only screen and (min-width: 768px) {
-
-    #root {
-        display: flex;
-    }
-
-}

@@ -14,7 +14,7 @@ class PokeCard extends Component {
                 <p>type: ${pokemon.type_1}</p>
                 <p>attack: ${pokemon.attack} defence: ${pokemon.defense}</p>
             </div>
-        <li>
+        </li>
         `;
     }
 }

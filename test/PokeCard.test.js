@@ -49,7 +49,7 @@ test('renders poke-card html from data', assert => {
                 <p>type: electric</p>
                 <p>attack: 40 defence: 15</p>
             </div>
-        <li>
+        </li>
     `;
 
     // act
