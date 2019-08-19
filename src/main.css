@@ -12,10 +12,6 @@ header {
     max-width: 90%;
 }
 
-#chars {
-    display: none;
-}
-
 .options {
     display: flex;
     margin: 10px 10px;
@@ -57,4 +53,21 @@ li {
     font-family: 'Lexend Deca', sans-serif;
     font-size: .8em;
     margin: 10px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .content {
+        display: flex;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        width: 90%;
+        margin: 5px;
+    }
 }
