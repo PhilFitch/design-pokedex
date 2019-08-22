@@ -27,8 +27,10 @@ class App extends Component {
 
         function loadPokes() {
             const pokes = hashStorage.get();
+            // console.log(pokes);
             getPokes(pokes)
                 .then(data => {
+                    // console.log(data);
                     const pokemon = data.results;
                     const totalCount = data.count;
 

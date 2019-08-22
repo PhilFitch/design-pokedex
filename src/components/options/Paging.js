@@ -44,6 +44,7 @@ class Paging extends Component {
             <button class="prev" ${currentPage === 1 ? 'disabled' : ''}>◀</button>
             <span>Page ${currentPage} of ${lastPage}</span>
             <button class="next" ${currentPage === lastPage ? 'disabled' : ''}>▶</button>
+        </p>
         `;
     }
 }

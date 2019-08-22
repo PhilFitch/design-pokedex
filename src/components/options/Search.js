@@ -7,16 +7,16 @@ class Search extends Component {
         form.addEventListener('submit', event => {
             event.preventDefault();
             const formData = new FormData(form);
-            const search = formData.get(search);
-
+            const search = formData.get('search');
+            
             hashStorage.set({
                 search: search,
                 page: 1
             });
         });
-
+        
         const input = form.querySelector('input');
-
+        
         window.addEventListener('hashchange', () => {
             input.value = hashStorage.get().search || '';
         });
@@ -25,11 +25,16 @@ class Search extends Component {
     renderHTML() {
         const search = hashStorage.get().search || '';
         return /*html*/`
-
             <form>
-                input name="search" value=${search};
+                <input name="search" value=${search}>
                 <button>Search</button>
             </form>
+        `;
+    }
+}
+
+export default Search;
+
 
             // <div class="search">
             //     <label for="search-select">Search: </label>
@@ -42,8 +47,3 @@ class Search extends Component {
             //     </select>
             //     <input type="text" id="term" size="15">
             // </div>
-        `;
-    }
-}
-
-export default Search;
